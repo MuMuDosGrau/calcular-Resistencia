@@ -7,7 +7,7 @@ for (let i = 0; i < resist.length - 1; i++) {
     if (i == 0) {
         acumula = ((resist[i] * resist[i + 1]) / (resist[i] + resist[i + 1]))
     } else {
-        acumula = ((acumula[i] * resist[i + 1]) / (acumula[i] + resist[i + 1]))
+        acumula = ((acumula * resist[i + 1]) / (acumula + resist[i + 1]))
     }
 }
 alert(`O valor da resistência equivalente é: ${resist} = ${acumula.toFixed(1)} Ω `)
